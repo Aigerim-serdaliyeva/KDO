@@ -24,8 +24,6 @@
 
   <div class="page-wrapper">
 
-    <div class="page-top"><i class="fa fa-angle-double-up"></i></div>
-
     <header class="header">
       <div class="container">
         <div class="header__content">
@@ -33,17 +31,27 @@
             <img src="./img/logo.png" alt="">
           </a>
 
-          <h3 class="header__title">
-          </h3>
-
-          <div class="grow"></div>
-
-          <div class="header__phone d-none d-lg-block">
-            <a href="tel:+" class="text-phone" id="phone_number">+ 7 (727) 317- 01-64</a>
-            <a href="tel:+" class="text-phone" id="phone_number">+ 7 (778) 997-26-30</a>
-          </div>
-
-          <a href="#" class="button d-none d-sm-block" data-remodal-target="zvonok-modal">Заказать звонок</a>
+          <nav class="main-menu inverse">
+            <div class="container">
+              <ul>
+                <li class="link">
+                  <a href="#work" class="inverse">Последние работы</a>
+                </li>
+                <li class="link">
+                  <a href="/service.html" class="inverse">Услуги</a>
+                </li>
+                <li class="link">
+                  <a href="/about.html" class="inverse">О нас</a>
+                </li>
+                <li class="link">
+                  <a href="/portfolio.html" class="inverse">Портфолио</a>
+                </li>
+                <li class="link">
+                  <a href="/contact.html" class="inverse">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
 
           <button class="hamburger hamburger--elastic hamburger--accessible">
             <span class="hamburger-box">
@@ -51,140 +59,186 @@
             </span>
           </button>
         </div>
-
-        <nav class="main-menu">
-          <div class="container">
-            <ul>
-              <li class="link">
-                <a href="#main">Главная</a>
-              </li>
-              <li class="link">
-                <a href="#service">Услуги</a>
-              </li>
-              <li class="link last">
-                <a href="#contact">Контакты</a>
-              </li>
-              <li class="d-lg-none">
-                <a href="tel:+" class="text-phone" id="phone_number">+ 7 (727) 317- 01-64</a>
-              </li>
-              <li class="d-lg-none">
-                <a href="tel:+" class="text-phone" id="phone_number">+ 7 (778) 997-26-30</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
       </div>
     </header>
 
     <section class="section s-main" id="main">
       <div class="container">
-        <h1 class="s-main__title"></h1>
+        <div class="s-main__img">
+          <img src="./img/KDO.png" alt="">
+        </div>
+      </div>
+    </section>
+    
+    <section class="section s-development">
+      <div class="container">
+        <div class="s-development__header">
+          <h2 class="section-title">pазработка и поддержка <br>
+            вашего продукта
+            <div class="s-development__title">UI/UX Дизайн, Вэб Дизайн, Брэндинг, Дизайн и разработка мобильных приложений, Разработка вэб-сайтов и приложений.</div>
+          </h2>          
+          
+        </div>
         
-        <div class="form form--vertical wow slideInLeft">
-          <form action="/mail.php" method="post">
-            <div class="form__title">Собираетесь в путешествие, но не знаете как и с чего начать? Доверьтесь нам и сэкономьте!</div>
-            <div class="form__content">
-              <input type="hidden" name="info" value="Оставьте заявку на комплексные туристические услуги и получите их со скидкой в 20%!">
-
-              <div class="input-div">
-                <input type="text" class="input" name="name" placeholder="Имя">
-              </div>
-
-              <div class="input-div">
-                <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required minlength="10">
-                <span class="error-message">Заполните это поле</span>
-              </div>
-
-              <button class="button ajax-submit" type="submit" id="ostavit_zayavku">Оставить заявку</button>
-
-              <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
-            </div>
-          </form>
+        <div class="s-development__text">
+            Мы предлагаем узкоспециализированную полную поддержку DevOps для организаций на любом этапе их трансформации. Мы являемся преданными и увлеченными экспертами для каждого из столпов нашей сервисной компании DevOps: архитектура программного обеспечения, непрерывная интеграция, непрерывная поставка, автоматизация, эксплуатация, автоматическое тестирование, мониторинг, оптимизация производительности и совместная работа. Мы понимаем, что организациям нужна гибкость, когда дело доходит до услуг DevOps - от полной сквозной поддержки DevOps до специализированных потребностей в одной или нескольких областях DevOps.
         </div>
-
       </div>
     </section>
 
-    <section class="section s-test">
+    <section class="section s-about">
       <div class="container">
-
-        <div class="form form--horizontal wow slideInUp">
-          <form action="/mail.php" method="post">
-            <div class="form__title">Собираетесь в путешествие, но не знаете как и с чего начать? Доверьтесь нам и сэкономьте!</div>
-            <div class="form__content">
-
-              <input type="hidden" name="info" value="Оставьте заявку на комплексные туристические услуги и получите их со скидкой в 20%!">
-
-              <div class="input-div">
-                <input type="text" class="input" name="name" placeholder="Имя">
-              </div>
-
-              <div class="input-div">
-                <input type="email" class="input" name="email" placeholder="E-mail *" required="">
-                <span class="error-message">Заполните это поле</span>
-              </div>
-
-              <div class="input-div">
-                <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required="" minlength="10">
-                <span class="error-message">Заполните это поле</span>
-              </div>
-
-              <button class="button ajax-submit" type="submit" id="ostavit_zayavku">Оставить заявку</button>
+        <h2 class="section-title">
+          <!-- <div class="section-title__num1">11010000 10011111 11010000 10111110 11010000 10110111 11010000 10110100 11010001 10000000 11010000 10110000 11010000 10110010 11010000 10111011 11010001 10001111 11010000 10110101 11010000 10111100 101100 100000 11010000 10011100 11010001 10001011 100000 11010000 10010100 11010000 10110000 11010001 10000000 11010000 10111000 11010000 10111100 100000 11010001 10000010 11010000 10110101 11010000 10110001 11010000 10110101 100000 11010001 10000001 11010000 10111010 11010000 10111000 11010000 10110100 11010000 10111010 11010001 10000011 100000 11010000 10110010 100000 110010 110000 100101 100000 11010000 10110111 11010000 10110000 100000 11010001 10000001 11010000 10111110 11010000 10111110 11010000 10110001 11010001 10000000 11010000 10110000 11010000 10110111 11010000 10111000 11010001 10000010 11010000 10110101 11010000 10111011 11010001 10001100 11010000 10111101 11010000 10111110 11010001 10000001 11010001 10000010 11010001 10001100 101110</div> -->
+          <span class="accent">КОМАНДА</span> KDO
+          
+          <!-- <div class="section-title__num2">11010000 10011111 11010000 10111110 11010000 10110111 11010000 10110100 11010001 10000000 11010000 10110000 11010000 10110010 11010000 10111011 11010001 10001111 11010000 10110101 11010000 10111100 101100 100000 11010000 10011100 11010001 10001011 100000 11010000 10010100 11010000 10110000 11010001 10000000 11010000 10111000 11010000 10111100 100000 11010001 10000010 11010000 10110101 11010000 10110001 11010000 10110101 100000 11010001 10000001 11010000 10111010 11010000 10111000 11010000 10110100 11010000 10111010 11010001 10000011 100000 11010000 10110010 100000 110010 110000 100101 100000 11010000 10110111 11010000 10110000 100000 11010001 10000001 11010000 10111110 11010000 10111110 11010000 10110001 11010001 10000000 11010000 10110000 11010000 10110111 11010000 10111000 11010001 10000010 11010000 10110101 11010000 10111011 11010001 10001100 11010000 10111101 11010000 10111110 11010001 10000001 11010001 10000010 11010001 10001100 101110</div> -->
+        </h2>
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="about">
+              <div class="about__img"><img src="./img/about-1.png" alt=""></div>
+              <h3 class="about__title">Опытные разработчики</h3>
             </div>
-            <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
-          </form>
+          </div>
+          <div class="col-md-4">
+            <div class="about">
+              <div class="about__img"><img src="./img/about-2.png" alt=""></div>
+              <h3 class="about__title">Сильных  Digital маркетологов</h3>
+            </div>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-md-4">
+            <div class="about">
+              <div class="about__img"><img src="./img/about-3.png" alt=""></div>
+              <h3 class="about__title">Надежная поддержка продукта</h3>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="about">
+              <div class="about__img"><img src="./img/about-4.png" alt=""></div>
+              <h3 class="about__title">Креативные дизайнеры</h3>
+            </div>
+          </div>
         </div>
-
       </div>
     </section>
 
-    <footer class="footer inverse">
+    <section class="section s-work">      
+      <h2 class="section-title"><span class="right">Представляем вашему вниманию </span>
+        <span class="left">НАШИ ПОСЛЕДНИЕ РАБОТЫ</span>
+      </h2>
+      <div class="s-work__content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="work work--1">
+                <div class="work__img"><img src="./img/work-1.jpg" alt=""></div>
+                <div class="work__title">MURATOV PARTNERS</div>
+                <div class="work__text">Корпоративный сайт</div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="work work--2">
+                <div class="work__img"><img src="./img/work-2.jpg" alt=""></div>
+                <div class="work__title">MURATOV PARTNERS</div>
+                <div class="work__text">Landing page</div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="work work--3">
+                <div class="work__img"><img src="./img/work-3.jpg" alt=""></div>
+                <div class="work__title">MURATOV PARTNERS</div>
+                <div class="work__text">Корпоративный сайт</div>
+              </div>
+            </div>
+          </div>
+          <div class="s-work__more">Другие проекты <img src="./img/arrow-right.png" alt=""></div>
+        </div>
+      </div>      
+    </section>
+
+    <section class="section s-partners">
       <div class="container">
-        <div class="footer__content">
-          <a href="/" class="logo">
-            <img src="./img/logo.png" alt="">
-          </a>
-
-          <div class="footer__address"></div>
-
-          <div class="footer__phone">Телефоны:
-            <a href="tel:+" class="text-phone" id="phone_number">+ 7 (727) 317 - 01 - 64</a>
-            <a href="tel:+" class="text-phone" id="phone_number">+ 7 778 997 - 26 - 30</a>
+        <div class="section-title section-title--center">НАШИ ПАРТНЕРЫ</div>
+        <div class="row ">
+          <div class="col-md-3 col-sm-4">
+            <div class="partner"><img src="./img/top-security.png" alt=""></div>
           </div>
-
-          <div class="footer__comand">Создано командой
-            <a href="//evodreammarketing.com" target="_blank"><img src="./img/evodream.png" alt="EvodreamMarketing"></a>
+          <div class="col-md-3 col-sm-4">
+            <div class="partner"><img src="./img/top-security.png" alt=""></div>
           </div>
-        </div>
+          <div class="col-md-3 col-sm-4">
+            <div class="partner"><img src="./img/top-security.png" alt=""></div>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <div class="partner"><img src="./img/top-security.png" alt=""></div>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <div class="partner"><img src="./img/top-security.png" alt=""></div>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <div class="partner"><img src="./img/top-security.png" alt=""></div>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <div class="partner"><img src="./img/top-security.png" alt=""></div>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <div class="partner"><img src="./img/top-security.png" alt=""></div>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <div class="partner"><img src="./img/top-security.png" alt=""></div>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <div class="partner"><img src="./img/top-security.png" alt=""></div>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <div class="partner"><img src="./img/top-security.png" alt=""></div>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <div class="partner"><img src="./img/top-security.png" alt=""></div>
+          </div>
+        </div>       
       </div>
-    </footer>
-  </div>
+    </section>
 
-  <div class="remodal remodal--small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
-    <button data-remodal-action="close" class="remodal-close"></button>
+    <section class="s-brif">
+      <div class="s-brif__text">Для заказа наших услуг просто заполните бриф и мы с вами свяжемся:</div>
+      <div class="s-brif__title">Заполнить бриф <img src="./img/brif.png"></div>
+    </section>
 
-    <div class="remodal__title">Оставьте заявку, <br>и наш консультант Вам перезвонит</div>
-
-    <div class="form form--vertical">
-      <form action="/mail.php" method="post">
-        <div class="form__content">
-          <input type="hidden" name="info" value="Обратный звонок">
-
-          <div class="input-div">
-            <input type="text" class="input" name="name" placeholder="Имя">
+    <section class="section s-contact inverse">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-4 col-md-5">
+            <a href="/" class="logo">
+              <img src="./img/logo-contact.png" alt="">
+            </a>
           </div>
-
-          <div class="input-div">
-            <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required minlength="10">
-            <span class="error-message">Заполните это поле</span>
+          <div class="col-lg-7 col-md-7">              
+            <div class="s-contact__content">
+              <div class="contact">
+                <div class="contact__title">Контакты</div>
+                <div class="contact__text"><a href="tel:+77071234567" class="text-phone" id="phone_number">+7(707) 123 45 67</a></div>
+                <div class="contact__text"><a href="tel:+77071234567" class="text-phone" id="phone_number">+7(707) 123 45 67</a></div>
+                <div class="contact__text"><a href="tel:+77071234567" class="text-phone" id="phone_number">+7(707) 123 45 67</a></div>
+              </div>
+              <div class="contact">
+                <div class="contact__title">Адрес</div>
+                <div class="contact__text">г. Алматы ул. Шевченко</div>
+              </div>
+              <div class="contact">
+                <div class="contact__title">Соцсети</div>
+                <div class="contact__text"><img src="./img/viber.png" alt=""><a href="">@kazdevops</a></div>
+                <div class="contact__text"><img src="./img/whatsapp.png" alt=""><a href="">+7(707) 123 45 67</a></div>
+                <div class="contact__text"><img src="./img/instagram.png" alt=""><a href="">@kazdevops</a></div>
+              </div>
+            </div>
           </div>
-
-          <button class="button ajax-submit" type="submit" id="zakazat_zvonok">Заказать обратный звонок</button>
-
-          <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
         </div>
-      </form>
-    </div>
+        <div class="s-contact__info">All Rights Reserved  2019  «KazDevOps»</div>
+      </div>
+    </section>
   </div>
 
   <script src="./js/libs.min.js"></script>
