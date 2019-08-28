@@ -342,12 +342,6 @@
         position: relative;
         height: 600px;        
         transition: all .3s;
-        overflow: auto;
-        -ms-overflow-style: none;  // IE 10+
-        scrollbar-width: none;  // Firefox
-        &::-webkit-scrollbar { 
-          display: none;  // Safari and Chrome
-        }
 
         &::before {
           position: absolute;
@@ -357,6 +351,16 @@
           right: 0;
           bottom: 0;
           left: 0;
+        }
+
+        &__content {
+          height: 100%;
+          overflow: auto;
+          -ms-overflow-style: none;  // IE 10+
+          scrollbar-width: none;  // Firefox
+          &::-webkit-scrollbar { 
+            display: none;  // Safari and Chrome
+          }
         }
       }
 
