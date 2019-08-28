@@ -5790,9 +5790,28 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     margin-top: 10px; }
 
+.s-work--portfolio {
+  padding: 200px 0; }
+  .s-work--portfolio .section-title {
+    font-size: 268px !important;
+    line-height: 1.1;
+    z-index: 1; }
+    .s-work--portfolio .section-title:after {
+      content: "";
+      width: 461px;
+      height: 244px;
+      background-image: url("../img/work-figure.png");
+      position: absolute;
+      top: 5%;
+      left: 28%; }
+  .s-work--portfolio .s-work__content {
+    background-image: url("../img/work-content-back.png");
+    background-repeat: no-repeat;
+    padding: 550px 0 400px;
+    margin-top: -450px; }
+
 .s-work .section-title {
   font-size: 120px;
-  line-height: 132px;
   max-width: 1198px; }
   .s-work .section-title span {
     display: block; }
@@ -5905,7 +5924,8 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url("../img/contact-back.png");
   padding: 300px 0 80px; }
   .s-contact--bgnone {
-    background-image: none; }
+    background-image: none;
+    padding-top: 0; }
   .s-contact--title {
     padding-top: 260px; }
     .s-contact--title .section-title {

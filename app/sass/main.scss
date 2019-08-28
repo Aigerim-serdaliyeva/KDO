@@ -255,9 +255,34 @@
 
   &-work {
 
+    &--portfolio {
+      padding: 200px 0;
+
+      .section-title {
+        font-size: 268px !important;
+        line-height: 1.1;
+        z-index: 1;
+        &:after {
+          content: "";
+          width: 461px;
+          height: 244px;
+          background-image: url("../img/work-figure.png");
+          position: absolute;
+          top: 5%;
+          left: 28%;
+        }
+      }
+
+      .s-work__content {        
+        background-image: url("../img/work-content-back.png");
+        background-repeat: no-repeat;
+        padding: 550px 0 400px;
+        margin-top: -450px;
+      }
+    }
+
     .section-title {
       font-size: 120px;
-      line-height: 132px;      
       max-width: 1198px;
       span {
         display: block;
@@ -402,6 +427,7 @@
 
     &--bgnone {
       background-image: none;
+      padding-top: 0;
     }
     
     &--title {
