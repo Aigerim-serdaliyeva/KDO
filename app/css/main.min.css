@@ -5827,6 +5827,10 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url("../img/work-back.png");
   position: relative;
   padding: 50px 0 180px; }
+  .s-work__content .row {
+    margin-bottom: 80px; }
+    .s-work__content .row:last-child {
+      margin-bottom: 0; }
 
 .s-work__more {
   font-family: mr_DetectivesIncG, serif;
@@ -5948,28 +5952,12 @@ h1, h2, h3, h4, h5, h6 {
         background-image: url("../img/contact-figure.png");
         top: 7%;
         left: 40%; }
-  .s-contact__map {
-    position: relative; }
-    .s-contact__map .map {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: 900px;
-      width: 100%;
-      z-index: 10;
-      opacity: 0; }
-  .s-contact--map .map-kdo {
-    position: absolute;
-    top: 43%;
-    left: 47.5%;
-    cursor: pointer; }
   .s-contact__content {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    margin-left: 60px; }
   .s-contact__info {
     font-size: 12px;
     text-align: center;
@@ -6152,6 +6140,35 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: underline;
     color: #FFCC00; }
 
+.s-map {
+  position: relative;
+  z-index: 0; }
+  .s-map.show-map .s-map__yandex > ymaps {
+    opacity: 1; }
+  .s-map.show-map .s-map__image {
+    z-index: -1;
+    opacity: 0; }
+  .s-map__yandex {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; }
+    .s-map__yandex > ymaps {
+      opacity: 0;
+      height: 100% !important; }
+  .s-map__image {
+    position: relative;
+    z-index: 2; }
+  .s-map .button {
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 90px;
+    padding: 28px 50px;
+    position: absolute;
+    right: 20%;
+    bottom: 115px; }
+
 @font-face {
   font-family: "OpenSans";
   font-weight: normal;
@@ -6181,6 +6198,42 @@ h1, h2, h3, h4, h5, h6 {
   src: url("../fonts/mr_DetectivesIncG/Regular/mr_DetectivesIncG.eot?#iefix") format("embedded-opentype"), url("../fonts/mr_DetectivesIncG/Regular/mr_DetectivesIncG.woff") format("woff"), url("../fonts/mr_DetectivesIncG/Regular/mr_DetectivesIncG.woff2") format("woff2"), url("../fonts/mr_DetectivesIncG/Regular/mr_DetectivesIncG.ttf") format("truetype"); }
 
 /*==========  Desktop First  ==========*/
+@media (max-width: 1500px) {
+  .s-main {
+    padding: 270px 0; }
+  .s-development .section-title {
+    font-size: 130px;
+    max-width: 750px; }
+    .s-development .section-title::before {
+      width: 300px;
+      height: 300px;
+      background-image: url("../img/service-back-min.png");
+      left: -300px; }
+  .s-development__title {
+    right: -3%;
+    font-size: 15px; }
+  .s-development__text {
+    max-width: 750px; }
+  .s-about .section-title::before, .s-about .section-title::after {
+    max-width: 480px; }
+  .s-work .section-title {
+    font-size: 100px; }
+  .s-brif__title {
+    font-size: 140px; }
+  .s-resolve {
+    padding: 250px 0 270px; }
+    .s-resolve .section-title {
+      font-size: 140px; }
+  .s-service .service {
+    margin-bottom: 100px; }
+  .s-contact--title {
+    margin-bottom: 0;
+    padding: 200px 0 100px; }
+  .s-map .button {
+    font-size: 20px;
+    padding: 20px 40px;
+    right: 23%; } }
+
 @media (max-width: 991.98px) {
   .hamburger {
     display: block; }
@@ -6198,9 +6251,9 @@ h1, h2, h3, h4, h5, h6 {
         margin: 0 0 20px 0 !important; }
   .main-menu {
     display: none;
-    background-color: #fff;
+    background-image: url("../img/body-back.jpg");
     position: fixed;
-    top: 89px;
+    top: 70px;
     left: 0;
     right: 0;
     text-align: left;

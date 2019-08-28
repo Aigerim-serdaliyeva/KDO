@@ -158,7 +158,7 @@ $(document).ready(function () {
   });
 
 
-  $(".s-map__kdo").click( function() {
+  $(".s-map__button").click( function() {
     $(this).closest('.s-map').addClass('show-map');
   });
 

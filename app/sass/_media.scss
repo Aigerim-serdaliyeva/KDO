@@ -3,6 +3,86 @@
 
 /*==========  Desktop First  ==========*/
 
+@media (max-width: 1500px) {
+  .s {
+
+    &-main {
+      padding: 270px 0;
+    }
+
+    &-development {
+      .section-title {
+        font-size: 130px;
+        max-width: 750px;
+        &::before {
+          width: 300px;
+          height: 300px;
+          background-image: url("../img/service-back-min.png");
+          left: -300px;
+        }
+      }
+      &__title {
+        right: -3%;
+        font-size: 15px;
+      }
+      &__text {
+        max-width: 750px;
+      }
+    }
+
+    &-about {
+      .section-title {
+        &::before, &::after {
+          max-width: 480px;
+        }
+      }
+    }
+
+    &-work {
+      .section-title {
+        font-size: 100px;
+      }
+      .work {
+      }
+    }
+
+    &-brif {
+      &__title {
+        font-size: 140px;
+      }
+    }
+
+    &-resolve {
+      padding: 250px 0 270px;
+      .section-title {
+        font-size: 140px;
+      }
+    }
+
+    &-service {
+      .service {
+        margin-bottom: 100px;
+      }
+    }
+
+    &-contact {
+
+      &--title {
+        margin-bottom: 0;
+        padding: 200px 0 100px;
+      }
+    }
+
+    &-map {
+      .button {
+        font-size: 20px;
+        padding: 20px 40px;
+        right: 23%;         
+      }
+    }
+  }
+}
+
 // ≥1200px
 @include media-breakpoint-down(lg) {
 	
@@ -32,9 +112,9 @@
 
 	.main-menu {
     display: none;
-    background-color: #fff;
+    background-image: url("../img/body-back.jpg");
     position: fixed;
-    top: 89px;
+    top: 70px;
     left: 0;
     right: 0;
     text-align: left;
