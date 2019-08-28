@@ -5754,47 +5754,49 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
     line-height: 25px; }
 
-.s-about .section-title {
-  font-size: 160px;
+.s-about {
   text-align: center; }
-  .s-about .section-title::before, .s-about .section-title::after {
-    content: "";
-    position: absolute;
-    width: 708px;
-    height: 131px;
-    top: 55%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%); }
-  .s-about .section-title::before {
-    left: 0;
-    background-image: url("../img/numbers-1.png"); }
-  .s-about .section-title::after {
-    right: 0;
-    background-image: url("../img/numbers-2.png"); }
-
-.s-about .about {
-  text-align: center;
-  margin-bottom: 60px; }
-  .s-about .about__img {
-    height: 98px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  .s-about .about__title {
-    font-size: 18px;
-    font-weight: 600;
+  .s-about .section-title {
+    display: inline-block;
+    font-size: 160px;
+    text-align: center; }
+    .s-about .section-title::before, .s-about .section-title::after {
+      content: "";
+      position: absolute;
+      width: 708px;
+      height: 131px;
+      top: 55%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    .s-about .section-title::before {
+      left: -708px;
+      background-image: url("../img/numbers-1.png"); }
+    .s-about .section-title::after {
+      right: -708px;
+      background-image: url("../img/numbers-2.png"); }
+  .s-about .about {
     text-align: center;
-    margin-top: 10px; }
+    margin-bottom: 60px; }
+    .s-about .about__img {
+      height: 98px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .s-about .about__title {
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 10px; }
 
 .s-work--portfolio {
   padding: 200px 0; }
@@ -6214,8 +6216,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 15px; }
   .s-development__text {
     max-width: 750px; }
-  .s-about .section-title::before, .s-about .section-title::after {
-    max-width: 480px; }
   .s-work .section-title {
     font-size: 100px; }
   .s-brif__title {

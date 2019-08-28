@@ -210,8 +210,9 @@
 }
 
 .s-about {
-
+  text-align: center;
   .section-title {
+    display: inline-block;
     font-size: 160px;
     // line-height: 176px;
     text-align: center;
@@ -220,17 +221,17 @@
       content: "";
       position: absolute;
       width: 708px;
-      height: 131px;        
+      height: 131px;
       top: 55%;
       transform: translateY(-50%);
     }
     &::before {
-      left: 0;        
+      left: -708px;
       background-image: url("../img/numbers-1.png");
     }
 
     &::after {
-      right: 0;
+      right: -708px;
       background-image: url("../img/numbers-2.png");
     }
   }
