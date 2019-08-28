@@ -158,9 +158,9 @@ $(document).ready(function () {
   });
 
 
-  $(".map-kdo").click( function() {
-    $(this).closest('.s-contact__map').find('.map').css({ opacity: 1});
-  })
+  $(".s-map__kdo").click( function() {
+    $(this).closest('.s-map').addClass('show-map');
+  });
 
   $(".carousel-certificates").owlCarousel({
     loop: true,

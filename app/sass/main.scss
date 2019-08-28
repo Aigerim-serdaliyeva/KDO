@@ -454,31 +454,6 @@
         }
       }
     }
-
-    &__map {
-      position: relative;
-      .map {
-        position: absolute;
-        // position: relative;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 900px; 
-        width: 100%;
-        z-index: 10;
-        opacity: 0
-      }
-    }
-
-    &--map {      
-      .map-kdo {
-        position: absolute;
-        top: 43%;
-        left: 47.5%;
-        cursor: pointer;
-      }
-    }
     
     &__content {
       display: flex;
@@ -703,6 +678,45 @@
       text-decoration: underline;
       color: $accent;
     }
+  }
+}
+
+.s-map {
+  position: relative;
+  z-index: 0;
+  &.show-map {
+    .s-map {
+      &__yandex {
+        & > ymaps {
+          opacity: 1;
+        }        
+      }
+      &__image {
+        z-index: -1;
+        opacity: 0;
+      }
+    }
+  }
+  &__yandex {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; 
+    width: 100%;
+    & > ymaps {
+      opacity: 0;
+      height: 100% !important;
+    }
+  }
+  &__image {
+    position: relative;
+    z-index: 2;
+  }
+  &__kdo {
+    position: absolute;
+    top: 43%;
+    left: 47.5%;
+    cursor: pointer;
   }
 }
 
