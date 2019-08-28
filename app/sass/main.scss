@@ -10,6 +10,12 @@
   flex-direction: column;
 }
 
+.contact-page {
+  background-image: url("../img/contact-back-figure.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -114,6 +120,7 @@
   &-title {
     font-size: 148px;
     font-weight: normal;
+    line-height: 1.1;
     text-transform: uppercase;
     font-family: mr_DetectivesIncG, serif;
     margin: 0 auto 50px;
@@ -184,12 +191,13 @@
         background: #393939;
         left: 0;        
       }
-      &::before {
+      &::after {
         content: "";
         position: absolute;
         width: 2px;
         height: 100%;
         background: $accent;
+        top: 0;
         left: 2px;
       }
     }
@@ -302,12 +310,8 @@
       font-size: 96px;
       line-height: 105px;
       text-align: right;
-      // position: relative;
       img {
         margin-top: -10px;
-        // position: absolute;
-        // top: 50%;
-        // transform: translateY(-50%);
       }
     }
 
@@ -435,7 +439,8 @@
     }
     
     &--title {
-      padding-top: 260px;
+      padding: 260px 0 50px;
+      margin-bottom: -100px;
       .section-title {
         font-size: 340px;
         &:after {
@@ -444,13 +449,29 @@
           width: 766px;
           height: 477px;
           background-image: url("../img/contact-figure.png");
+          top: 7%;
+          left: 40%;
         }
       }
     }
 
-    &--map {
-      background-image: url('../img/main-back.jpg');
+    &__map {
       position: relative;
+      .map {
+        // position: absolute;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%; 
+        width: 100%;
+        z-index: 10;
+        opacity: 0
+      }
+    }
+
+    &--map {      
       .map-kdo {
         position: absolute;
         top: 43%;
