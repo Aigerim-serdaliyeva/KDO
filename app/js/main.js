@@ -160,7 +160,6 @@ $(document).ready(function () {
 
   $(".map-kdo").click( function() {
     $(this).closest('.s-contact__map').find('.map').css({ opacity: 1});
-    $(this).css({ opacity: 0});
   })
 
   $(".carousel-certificates").owlCarousel({
