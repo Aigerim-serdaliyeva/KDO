@@ -26,6 +26,51 @@
   width: 100%;
   z-index: 98;
   padding: 10px 0;
+  z-index: 10;
+
+  &--opened {
+    max-width: 375px;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/main-back.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.3s;
+    left: 0 !important;
+    z-index: 10;
+    .header__footer {
+      display: block;
+    }
+    .logo-kdo {
+      display: block !important;
+    }
+    .logo1 {
+      display: none;
+    }
+    .main-menu {
+      display: block;
+      ul li a {
+        color: #fff;
+      }
+    }
+  }
+
+  .logo-kdo {
+    display: none;
+  }
+
+  &__footer {
+    text-align: center;
+    display: none;
+    &__links {
+      max-width: 130px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto 40px; 
+    }
+  }
 
   &--color {    
     background-image: url("../img/body-back.jpg") !important;
@@ -40,6 +85,83 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+}
+
+.burger-menu {  
+  display: none;
+  &--active {
+    .burger-menu {
+      &__btn {
+        width: 81px;
+        height: 30px;
+      }
+      &__lines {
+        width: 81px;
+        height: 30px;
+        border-radius: 0;
+        background: transparent;
+        &::before, &:after {
+          background: transparent !important;
+        }
+        background-image: url("../img/burger-menu.png");
+      }
+
+      &__overlay {
+        display: block;
+        z-index: -1;
+      }
+    }    
+  }
+
+  &__btn {
+    position: fixed;
+    top: 20px;
+    // left: 20px;
+    z-index: 30;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+  }
+
+  &__overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+  }
+    
+  &__lines {
+    position: absolute;
+    width: 30px;
+    height: 4.5px;
+    background: $accent;
+    border-radius: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &--black {
+      &::before, &::after {
+        background: #000 !important;
+      }
+    }
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 30px;
+      height: 4.5px;
+      background: #fff;
+    }
+    &::before {
+      top: -8px;
+    }
+    &::after {
+      top: 8px;
+    }
   }
 }
 

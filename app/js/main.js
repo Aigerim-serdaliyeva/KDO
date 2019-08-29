@@ -4,6 +4,7 @@ $(document).ready(function () {
   var $top = $(".page-top");
   var $html = $("html, body");
   var $header = $(".header");
+  const $burgerMenu = $('.burger-menu');
   var $menu = $(".main-menu");
   var headerHeight = 99;
   var $hamburger = $(".hamburger");
@@ -156,6 +157,28 @@ $(document).ready(function () {
       e.preventDefault();
     }
   });
+
+  $('.burger-menu__btn').click(function() {
+    if ($burgerMenu.hasClass('burger-menu--active')) {
+      closeMenu();
+    } else {
+      showMenu();
+    }
+  });
+
+  $('.burger-menu__overlay').click(function() {
+    closeMenu();
+  })
+  
+  function showMenu() {
+    $header.addClass('header--opened');
+    $burgerMenu.addClass('burger-menu--active');
+  }
+
+  function closeMenu() {
+    $header.removeClass('header--opened');
+    $burgerMenu.removeClass('burger-menu--active');
+  }
 
 
   $(".s-map__button").click( function() {
