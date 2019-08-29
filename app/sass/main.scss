@@ -267,6 +267,7 @@
     max-width: 250px;
     right: 0;
     bottom: 4%;
+    line-height: 1.5;
     &::before {
       content: "";
       position: absolute;
@@ -504,6 +505,7 @@
     text-align: center;
     background: $accent;
     padding: 40px 0;
+    display: block;
 
     img {
       margin-left: 30px;

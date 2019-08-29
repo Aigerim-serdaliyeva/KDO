@@ -5805,7 +5805,8 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 10px;
     max-width: 250px;
     right: 0;
-    bottom: 4%; }
+    bottom: 4%;
+    line-height: 1.5; }
     .s-development__title::before {
       content: "";
       position: absolute;
@@ -6002,7 +6003,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 150px;
     text-align: center;
     background: #FFCC00;
-    padding: 40px 0; }
+    padding: 40px 0;
+    display: block; }
     .s-brif__title img {
       margin-left: 30px; }
 
