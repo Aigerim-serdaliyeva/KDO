@@ -5656,6 +5656,10 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url("../img/body-back.jpg") !important; }
   .header--scrolled {
     background-image: url("../img/main-back.jpg"); }
+    .header--scrolled .main-menu ul li a {
+      color: #fff; }
+    .header--scrolled .header .logo2 {
+      display: none !important; }
   .header__content {
     display: -webkit-box;
     display: -webkit-flex;
@@ -5833,7 +5837,8 @@ h1, h2, h3, h4, h5, h6 {
   .s-about .section-title {
     display: inline-block;
     font-size: 160px;
-    text-align: center; }
+    text-align: center;
+    padding: 0 8px; }
     .s-about .section-title::before, .s-about .section-title::after {
       content: "";
       position: absolute;
@@ -5889,7 +5894,7 @@ h1, h2, h3, h4, h5, h6 {
   .s-work--portfolio .s-work__content {
     background-image: url("../img/work-content-back.png");
     background-repeat: no-repeat;
-    padding: 550px 0 400px;
+    padding: 550px 0 200px;
     margin-top: -450px; }
 
 .s-work .section-title {
@@ -6144,10 +6149,10 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 290px; }
   .s-kdo .kdo {
     font-family: mr_DetectivesIncG, serif;
-    font-size: 500px;
+    font-size: 450px;
     line-height: 0.92;
     position: absolute;
-    top: 245px;
+    top: 260px;
     z-index: 1; }
     .s-kdo .kdo span {
       display: block; }
@@ -6618,6 +6623,8 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 50px; }
     .s-programmists .programmists__kazdevops {
       max-width: 260px; }
+    .s-programmists .programmists__kdo {
+      display: none; }
   .s-map .map {
     display: none; }
     .s-map .map-mobile {
@@ -6642,6 +6649,12 @@ h1, h2, h3, h4, h5, h6 {
   .contact-page__mobile {
     padding: 260px 0 0;
     margin-top: -240px; }
+  .header .logo {
+    width: 120px; }
+  .header__footer__links {
+    margin-bottom: 25px; }
+  .main-menu ul {
+    margin-bottom: 50px; }
   .s-main__img {
     max-width: 155px;
     margin: 0 auto; }
@@ -6731,9 +6744,10 @@ h1, h2, h3, h4, h5, h6 {
   .s-kdo .kdo {
     font-size: 270px; }
   .s-programmists {
-    padding: 50px 0 250px; }
+    padding: 50px 0 390px; }
     .s-programmists .programmists__kazdevops {
-      max-width: 210px; }
+      max-width: 220px;
+      margin: 0 20px 0 auto; }
   .s-contact--title .section-title {
     font-size: 120px; }
     .s-contact--title .section-title::after {

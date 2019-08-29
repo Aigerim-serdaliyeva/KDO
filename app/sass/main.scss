@@ -78,6 +78,16 @@
 
   &--scrolled {
     background-image: url('../img/main-back.jpg');
+    .main-menu {
+      ul li a {
+        color: #fff;
+      }
+    }
+    .header {
+      .logo2 {
+        display: none !important;
+      }
+    }
   }
 
   &__content {
@@ -300,8 +310,8 @@
   .section-title {
     display: inline-block;
     font-size: 160px;
-    // line-height: 176px;
     text-align: center;
+    padding: 0 8px;
 
     &::before, &::after {
       content: "";
@@ -363,7 +373,7 @@
     .s-work__content {        
       background-image: url("../img/work-content-back.png");
       background-repeat: no-repeat;
-      padding: 550px 0 400px;
+      padding: 550px 0 200px;
       margin-top: -450px;
     }
   }
@@ -674,10 +684,10 @@
 
   .kdo {
     font-family: mr_DetectivesIncG, serif;
-    font-size: 500px;
+    font-size: 450px;
     line-height: 0.92;
     position: absolute;
-    top: 245px;
+    top: 260px;
     z-index: 1;
     span {
       display: block;
@@ -734,7 +744,6 @@
   }
 
 }
-
 
 .s-programmists {
   background-image: url("../img/main-back.jpg");

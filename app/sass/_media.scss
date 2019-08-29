@@ -609,6 +609,9 @@
         &__kazdevops {
           max-width: 260px;
         }
+        &__kdo {
+          display: none;
+        }
       }
     }
 
@@ -650,6 +653,23 @@
     &__mobile {
       padding: 260px 0 0;
       margin-top: -240px;
+    }
+  }
+
+  .header {
+    .logo {
+      width: 120px;
+    }
+    &__footer {
+      &__links {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  .main-menu {
+    ul {
+      margin-bottom: 50px;
     }
   }
 
@@ -811,11 +831,12 @@
     }
 
     &-programmists {
-      padding: 50px 0 250px;
+      padding: 50px 0 390px;
 
       .programmists {
         &__kazdevops {
-          max-width: 210px;
+          max-width: 220px;
+          margin: 0 20px 0 auto;
         }
       }
     }
