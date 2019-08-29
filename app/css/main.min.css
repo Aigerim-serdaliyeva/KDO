@@ -5603,7 +5603,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 375px;
     width: 100%;
     height: 100vh;
-    background-image: url("../img/main-back.jpg");
+    background-image: url("../img/main-back.jpg") !important;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -5653,8 +5653,7 @@ h1, h2, h3, h4, h5, h6 {
               justify-content: space-between;
       margin: 0 auto 40px; }
   .header--color {
-    background-image: url("../img/body-back.jpg") !important;
-    border-bottom: 1px solid #FFCC00; }
+    background-image: url("../img/body-back.jpg") !important; }
   .header--scrolled {
     background-image: url("../img/main-back.jpg"); }
   .header__content {
@@ -6318,7 +6317,7 @@ h1, h2, h3, h4, h5, h6 {
       padding: 500px 0 0;
       margin-top: -400px; }
   .s-resolve {
-    padding: 200px 0; }
+    padding: 110px 0; }
     .s-resolve .section-title {
       font-size: 120px; }
       .s-resolve .section-title::after {
@@ -6439,15 +6438,15 @@ h1, h2, h3, h4, h5, h6 {
           -ms-transform: translateX(-50%);
               transform: translateX(-50%); }
   .s-kdo {
-    padding-top: 180px; }
+    padding-top: 110px; }
     .s-kdo__title {
       margin-bottom: 20px; }
     .s-kdo ul li {
       font-size: 14px;
       margin-bottom: 15px; }
     .s-kdo .kdo {
-      font-size: 340px;
-      top: 190px; }
+      font-size: 300px;
+      top: 80px; }
   .s-programmists .programmists__kazdevops {
     margin: 0 0 0 auto;
     max-width: 500px; }
@@ -6458,7 +6457,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 30px auto 0;
     max-width: 600px; }
   .s-contact--title {
-    padding: 150px 0 0; }
+    padding: 110px 0 0; }
     .s-contact--title .section-title {
       font-size: 200px; }
   .s-map .button {
@@ -6572,7 +6571,7 @@ h1, h2, h3, h4, h5, h6 {
       .s-contact .contact__text {
         margin-left: 0; }
   .s-resolve {
-    padding: 150px 0 80px; }
+    padding: 110px 0 80px; }
     .s-resolve .section-title {
       font-size: 80px; }
     .s-resolve__text {
@@ -6593,24 +6592,22 @@ h1, h2, h3, h4, h5, h6 {
           height: 1px; }
       .s-service .service__text {
         font-size: 14px; }
-  .s-kdo {
-    padding: 160px 0 0; }
-    .s-kdo__title {
-      font-size: 18px;
-      text-align: center;
-      margin-bottom: 30px; }
-    .s-kdo__content {
-      margin: 0; }
-    .s-kdo ul {
-      margin-left: 100px; }
-      .s-kdo ul li {
-        padding-left: 18px; }
-        .s-kdo ul li::before {
-          width: 11px;
-          height: 11px; }
-    .s-kdo .kdo {
-      font-size: 170px;
-      top: 270px; }
+  .s-kdo__title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px; }
+  .s-kdo__content {
+    margin: 0; }
+  .s-kdo ul {
+    margin-left: 100px; }
+    .s-kdo ul li {
+      padding-left: 18px; }
+      .s-kdo ul li::before {
+        width: 11px;
+        height: 11px; }
+  .s-kdo .kdo {
+    font-size: 160px;
+    top: 220px; }
   .s-programmists {
     padding-top: 50px; }
     .s-programmists .programmists__kazdevops {
@@ -6722,7 +6719,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 17px; }
   .s-kdo ul {
     margin-left: 75px;
-    margin-bottom: 20px; }
+    margin-bottom: 30px; }
     .s-kdo ul li {
       margin-bottom: 8px; }
   .s-kdo .kdo {

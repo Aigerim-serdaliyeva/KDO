@@ -158,6 +158,10 @@ $(document).ready(function () {
     }
   });
 
+  $('ul.navigation a').each(function () {
+    if(this.href == location.href) $(this).parent().addClass('active');
+  })
+
   $('.burger-menu__btn').click(function() {
     if ($burgerMenu.hasClass('burger-menu--active')) {
       closeMenu();
@@ -172,6 +176,7 @@ $(document).ready(function () {
   
   function showMenu() {
     $header.addClass('header--opened');
+    $header.removeClass('header--color');
     $burgerMenu.addClass('burger-menu--active');
   }
 
