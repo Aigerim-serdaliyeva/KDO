@@ -6380,6 +6380,8 @@ h1, h2, h3, h4, h5, h6 {
       display: block !important; }
     .header .logo1 {
       display: none; }
+    .header .logo2 {
+      display: none; }
   .main-menu {
     display: block;
     top: 70px;
