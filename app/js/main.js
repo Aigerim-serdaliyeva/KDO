@@ -193,7 +193,8 @@ $(document).ready(function () {
 
   $('.burger-menu').click( function() {
     $(this).closest('.page-wrapper').find('.header--opened');
-    $(this).find('.burger-menu__btn').toggleClass('burger-left');
+    $(this).find('.burger-menu__btn').toggleClass('burger-left');    
+    // $(this).closest('.header-burger').toggleClass('header--scrolled');
     // $(this).closest('.page-wrapper').find('.header--scrolled').toggleClass('header--scrolled__burger');
   })
 

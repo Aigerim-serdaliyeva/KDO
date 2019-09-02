@@ -32,7 +32,7 @@
     padding: 30px 0;
     position: fixed;
     width: 100%;
-    z-index: 11;
+    z-index: 10;
   }
 
   &--opened {
@@ -104,6 +104,7 @@
       &__overlay {
         display: block;
         z-index: 1;
+        background: red;
       }
     }    
   }
