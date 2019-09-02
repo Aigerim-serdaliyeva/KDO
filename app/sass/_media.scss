@@ -173,27 +173,43 @@
 
   .burger-menu {
     display: block;
+
+    &__btn {
+      &.burger-left {
+        left: 20px;
+      }
+    }
   }
 
   .header {
-    padding: 30px 0 30px;
-    .logo {
-      display: none;
-    }
-    &--opened {
-      // left: -375px;
-      // overflow-y: auto;
-      .logo {
-        display: block;
-      }
+    max-width: 375px;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/main-back.jpg") !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: -375px;
+    transition: left 0.5s;
+
+    &__footer {
+      display: block;
     }
     &__content {
       flex-direction: column;
     }
+    .logo-kdo {
+      display: block !important;
+    }
+    .logo1 {
+      display: none;
+    }
+    
   }
 
 	.main-menu {
-    display: none;
+    display: block;
     top: 70px;
     left: 0;
     right: 0;
@@ -216,6 +232,7 @@
           margin: 0;
         }
         a {
+          color: #fff;
           // font-size: 18px;
         }
 			}
@@ -418,7 +435,6 @@
   .s {
     &-main {
       padding: 270px 0;
-      // height: 100vh;
     } 
 
     &-development {

@@ -47,6 +47,12 @@ $(document).ready(function () {
       $header.removeClass('header--scrolled');
     }
 
+    if ($wnd.scrollTop() > 0) {
+      $('.header-burger').addClass('header--scrolled');
+    } else {
+      $('.header-burger').removeClass('header--scrolled');
+    }
+
     var scrollPos = $wnd.scrollTop() + headerHeight;
 
     // добавляет клас active в ссылку меню, когда находимся на блоке, куда эта ссылка ссылается
@@ -184,6 +190,12 @@ $(document).ready(function () {
     $header.removeClass('header--opened');
     $burgerMenu.removeClass('burger-menu--active');
   }
+
+  $('.burger-menu').click( function() {
+    $(this).closest('.page-wrapper').find('.header--opened');
+    $(this).find('.burger-menu__btn').toggleClass('burger-left');
+    // $(this).closest('.page-wrapper').find('.header--scrolled').toggleClass('header--scrolled__burger');
+  })
 
 
   $(".s-map__button").click( function() {
