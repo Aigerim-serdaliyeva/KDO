@@ -84,6 +84,7 @@
 
 .burger-menu {  
   display: none;
+  
   &--active {
     .burger-menu {
       &__btn {
@@ -104,9 +105,14 @@
       &__overlay {
         display: block;
         z-index: 1;
-        background: red;
+        // background: red;
       }
     }    
+  }
+
+  &--scrolled {
+    background-image: url('../img/main-back.jpg');
+    padding: 30px 0;
   }
 
   &__btn {

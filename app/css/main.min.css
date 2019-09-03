@@ -5661,8 +5661,10 @@ h1, h2, h3, h4, h5, h6 {
       background: transparent !important; }
   .burger-menu--active .burger-menu__overlay {
     display: block;
-    z-index: 1;
-    background: red; }
+    z-index: 1; }
+  .burger-menu--scrolled {
+    background-image: url("../img/main-back.jpg");
+    padding: 30px 0; }
   .burger-menu__btn {
     position: fixed;
     top: 20px;
