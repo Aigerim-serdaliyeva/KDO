@@ -7,7 +7,6 @@ $(document).ready(function () {
   const $burgerMenu = $('.burger-menu');
   var $menu = $(".main-menu");
   var headerHeight = 82;
-  var $hamburger = $(".hamburger");
 
   // забираем utm из адресной строки и пишем в sessionStorage, чтобы отправить их на сервер при form submit
   var utms = parseGET();
@@ -84,11 +83,6 @@ $(document).ready(function () {
       var top = $($href).offset().top - headerHeight;
       $html.stop().animate({ scrollTop: top }, "slow", "swing");
     }
-
-    // как только доходим до блока, скрываем меню
-    if ($wnd.width() <= 991) {
-      toggleHamburger();
-    }
   });
 
   $top.click(function () {
@@ -103,23 +97,6 @@ $(document).ready(function () {
       checkInput($this);
     }
   });
-
-  $hamburger.click(function () {
-    toggleHamburger();
-    return false;
-  });
-
-  // показывает и скрывает меню, а также меняет состояние гамбургера
-  function toggleHamburger() {
-    $this = $hamburger;
-    if (!$this.hasClass("is-active")) {
-      $this.addClass('is-active');
-      $menu.slideDown('700');
-    } else {
-      $this.removeClass('is-active');
-      $menu.slideUp('700');
-    }
-  }
 
   // при закрытии модального окна удаляем error клас формы в модальном окне
   $(document).on('closing', '.remodal', function (e) {
@@ -206,17 +183,6 @@ $(document).ready(function () {
 
   $(".s-map__button").click( function() {
     $(this).closest('.s-map').addClass('show-map');
-  });
-
-  $(".carousel-certificates").owlCarousel({
-    loop: true,
-    smartSpeed: 500,
-    margin: 30,
-    navText: ['', ''],
-    responsive: {
-      0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      480: { items: 2, mouseDrag: true, dots: false, nav: true },
-    },
   });
 
 

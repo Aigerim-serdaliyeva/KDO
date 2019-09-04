@@ -100,38 +100,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.hamburger {
-  background-color: #fff;
-  padding: 10px;
-	line-height: 0;
-  display: none;
-  margin-left: 20px;
-	    
-  &-box {
-    width: 30px;
-  }
-
-  &-inner {
-    &, &:after, &:before {            
-      border-radius: 0;
-      width: 100%;
-      height: 2px;        
-    }
-
-    & {
-      margin-top: -1px;
-    }
-
-    &:before {
-      top: 0;
-    }
-
-    &:after {
-      bottom: -7px;
-    }
-  }
-}
-
 .grow {
   flex-grow: 1;
 }
