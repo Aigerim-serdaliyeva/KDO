@@ -5606,6 +5606,8 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 10; }
   .header--opened {
     left: 0 !important; }
+    .header--opened .burger-menu__close {
+      display: block; }
   .header .logo-kdo {
     display: none; }
   .header__footer {
@@ -5648,17 +5650,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .burger-menu {
   display: none; }
-  .burger-menu--active .burger-menu__btn {
-    width: 81px;
-    height: 30px; }
-  .burger-menu--active .burger-menu__lines {
-    width: 81px;
-    height: 30px;
-    border-radius: 0;
-    background: transparent;
-    background-image: url("../img/burger-menu.png"); }
-    .burger-menu--active .burger-menu__lines::before, .burger-menu--active .burger-menu__lines:after {
-      background: transparent !important; }
   .burger-menu--active .burger-menu__overlay {
     display: block;
     z-index: 1; }
@@ -5672,6 +5663,11 @@ h1, h2, h3, h4, h5, h6 {
     width: 30px;
     height: 25px;
     background: transparent; }
+  .burger-menu__close {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: none; }
   .burger-menu__overlay {
     display: none;
     position: fixed;
@@ -6343,8 +6339,6 @@ h1, h2, h3, h4, h5, h6 {
     display: block; }
   .burger-menu {
     display: block; }
-    .burger-menu__btn.burger-left {
-      left: 20px; }
   .header {
     max-width: 375px;
     width: 100%;

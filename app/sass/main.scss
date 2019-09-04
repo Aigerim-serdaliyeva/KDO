@@ -37,6 +37,10 @@
 
   &--opened {
     left: 0 !important;
+
+    .burger-menu__close {
+      display: block;
+    }
   }
 
   .logo-kdo {
@@ -87,25 +91,10 @@
   
   &--active {
     .burger-menu {
-      &__btn {
-        width: 81px;
-        height: 30px;
-      }
-      &__lines {
-        width: 81px;
-        height: 30px;
-        border-radius: 0;
-        background: transparent;
-        &::before, &:after {
-          background: transparent !important;
-        }
-        background-image: url("../img/burger-menu.png");
-      }
 
       &__overlay {
         display: block;
         z-index: 1;
-        // background: red;
       }
     }    
   }
@@ -118,11 +107,17 @@
   &__btn {
     position: fixed;
     top: 20px;
-    // left: 20px;
     z-index: 30;
     width: 30px;
     height: 25px;
     background: transparent;
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: none;
   }
 
   &__overlay {
